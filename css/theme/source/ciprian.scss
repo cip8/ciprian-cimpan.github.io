@@ -1,0 +1,280 @@
+/**
+ * Ciprian.pro theme for reveal.js.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700);
+
+$myBlue: #00c1c4;
+$myAccent: #ff6b01;
+$white: #FFFFFF;
+$grey: #636363;
+$black: #222222;
+
+// Override theme settings (see ../template/settings.scss)
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+$mainFont: 'Lora', sans-serif;
+$mainFontSize: 28px;
+$mainColor: $black;
+// $headingColor: $black;
+$backgroundColor: $white;
+$selectionBackgroundColor: $myBlue;
+
+
+// // Background generator
+// @mixin bodyBackground() {
+// 	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+// }
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+#ciprian .reveal {
+    .no-border {
+        border: none;
+    }
+    .no-padding {
+        padding: 0;
+    }
+    .no-margin {
+        margin: 0;
+    }
+    .no-shadow {
+        box-shadow: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+    .f-wrap {
+        flex-wrap: wrap;
+    }
+
+
+    section {
+        background-color: #f7f7f7;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            font-family: "Lato";
+            text-shadow: none;
+            text-transform: none;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 0 2em 0;
+        }
+        li {
+            background-image: url("https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/cip-logo.png");
+            background-repeat: no-repeat;
+            background-size: 1em auto;
+            background-position: 0% 0.25em;
+            margin: 1.25em 0;
+            padding: 0 0 0 2em;
+            line-height: 1.5em;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+
+        .main {
+            flex: 1;
+        }
+        .side {
+            width: 55%;
+            margin-left: 2%;
+            text-align: right;
+
+            img {
+                max-height: 80vh;
+            }
+        }
+
+        &.about-2 {
+            .side {
+                width: 60%;
+                > img {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        .title_photo {
+            background: url("https://storage.googleapis.com/ciprianpro.appspot.com/images/ciprian/my-hero-bg.gif") repeat-y;
+            background-size: 100% auto;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 4vh 0 0 0;
+            margin: 0 0 0 -5vw;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+            }
+        }
+
+        .dark-bg {
+            @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) )
+        } // .dark-bg
+
+        .slide_content {
+            padding: 2em; 
+
+            h1 {
+                font-size: 1.75em;
+                color: $myAccent;
+                border-bottom: 1px solid;
+                line-height: 1.5em;
+                margin: 0 0 1em 0;
+            }
+        } // .slide_content
+
+    } // section
+
+    #hello {
+        height: 100%;
+        background: $myBlue;
+
+        .flex {
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        svg {
+            fill: $white;
+            margin: 0 0 1em 0;
+            width: 300px;
+            height: 300px;
+        }
+        
+        h1 {
+            opacity: 0.8;
+            display: flex;
+            font-size: 5em;
+            color: $white;
+            font-weight: 700;
+        }
+    } // #hello
+
+    #overview {
+        text-align: left;
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        background-color: $white;
+
+        .slide_content {
+            width: 65%;
+            padding: 2em 1em 1em 1em;
+            font-family: 'Lato';
+        }
+
+        h2 {
+            font-family: 'Lato';
+            font-size: 1.75em;
+            color: $grey;
+            letter-spacing: -1px;
+            margin: 0.75em 0;
+        }
+
+        p {
+            font-size: 1.25em;
+            color: $grey;
+            margin: 1em 0;
+            > span {
+                font-size: 1.125em;
+                color: $myAccent;
+                font-weight: 700;
+            }
+        }
+
+        .hire-cip {
+            font-weight: 700;
+        }
+        
+    } // #overview
+
+    .content_section {
+        > section {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .side {
+        }
+    } // .content_section
+
+    #about {
+        > section {
+        }
+
+        .side {
+            text-align: right;
+        }
+        .flex {
+            justify-content: space-between;
+        }
+    } // #about
+
+    .fun-facts {
+        .side {
+            width: 56%;
+        }
+    } // .fun-facts
+
+    .case-study {
+        h1 {
+            > span {
+                color: $black;
+            }
+        }
+    } // .case-study
+
+    #work {
+        .current {
+            .side {
+                width: 49%;
+            }
+        }
+
+        .skills {
+            img {
+                max-height: none;
+                max-width: none;
+                height: 800px;
+            }
+        }
+    } // #work
+
+    #why-oaky {
+        .side {
+            width: 40%;
+        }
+    } // #why-oaky
+
+} // .reveal

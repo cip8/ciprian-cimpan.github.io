@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Ciprian @ Oaky</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/ciprian.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body id="ciprian">
+		<div class="reveal">
+			<div class="slides">
+
+				<section id="hello" data-transition="zoom">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 298 298" width="200" height="200">
+							<path d="M148.95,296.5c-18.6,0-36.62-3.39-53.69-10.08c9.33,2.56,19.03,4.12,28.96,4.65c2.24,0.12,4.51,0.18,6.74,0.18   c14.94,0,29.92-2.72,44.54-8.08c14.45-5.3,26.74-12.14,36.55-20.32c9.79-8.17,18.12-17.46,24.77-27.63c1.42-2.27,2.1-4.25,2.01-5.9   c-0.09-1.72-1.44-3.29-3.99-4.66L209,203.44c-1.33-0.81-2.59-1.2-3.81-1.2c-2.56,0-4.96,1.7-7.14,5.06   c-3.93,6.21-9.29,12.24-15.93,17.9c-6.64,5.66-14.38,10.13-23.01,13.29c-8.95,3.28-17.96,4.95-26.78,4.95   c-1.76,0-3.54-0.07-5.3-0.2c-10.56-0.78-20.59-3.52-29.8-8.14c-9.22-4.62-17.56-11.01-24.79-18.99   c-7.22-7.98-12.89-17.47-16.83-28.21c-3.94-10.74-5.74-21.58-5.35-32.24c0.39-10.66,2.66-20.81,6.75-30.19   c4.08-9.37,10.01-17.78,17.64-25c7.62-7.21,16.93-12.87,27.67-16.8c8.63-3.16,17.04-4.8,25.02-4.86l0.72,0   c7.77,0,16.19,0.95,25.02,2.83c1.06,0.19,2.04,0.28,2.92,0.28c3.46,0,5.64-1.42,6.49-4.22l6.39-34.99c0.13-1.11-0.1-2.45-0.67-4.01   c-0.59-1.62-2.1-2.91-4.48-3.83c-11.24-3.2-22.99-4.81-34.96-4.81c-0.7,0-1.4,0.01-2.1,0.02c-12.73,0.2-26.51,2.99-40.95,8.29   c-16.79,6.16-31.69,15.23-44.28,26.96c-12.58,11.73-22.56,25.36-29.67,40.51c-4.3,9.16-7.51,18.77-9.58,28.68   c3.38-34.75,18.86-66.93,44.17-91.46C73.99,16.26,110.44,1.5,148.95,1.5c81.33,0,147.5,66.17,147.5,147.5   C296.45,230.33,230.28,296.5,148.95,296.5z"></path>
+						</svg>
+						<h1>hello!</h1>
+					</div>
+				</section>
+				
+				<section id="overview" class="no-padding" data-transition="slide">
+					<div class="flex">
+						<div class="title_photo">
+							<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/ciprian/ciprian-cimpan-2019m.jpg" alt="Ciprian Cimpan">
+						</div>
+						<div class="slide_content">
+							<h1>Overview</h1>
+							<h2 class="fragment fade-up">$ciprian = new TeamMember();</h2>
+							<p class="fragment">$ciprian->fullName = '<span>Ciprian Nicolae Cimpan</span>';</p>
+							<p class="fragment">$ciprian->dateOfBirth = new DateTime('<span>November 8, 1986 23:00</span>');</p>
+							<p class="fragment">$ciprian->locations = new Map([<span>'RO'</span>, <span>'ES'</span>, <span>'NL'</span>]);</p>
+							<p class="fragment">$ciprian->position = new JobTitle('<span>Web Developer</span>');</p>
+							<p class="fragment">$ciprian->company = new Company('<span>ZAANG UK</span>');</p>
+							<p class="fragment">$ciprian->skills = new TechSkills(['<span>PHP</span>', '<span>SQL</span>', '<span>JS</span>', '<span>VueJS</span>', '<span>Laravel</span>', '<span>DevOps</span>']);</p>
+							<p class="fragment hire-cip">$ciprian->add();</p>
+						</div>
+					</div>
+				</section>
+				
+				<section id="about" class="content_section" data-transition="slide">
+					<section>
+						<div class="slide_content">
+							<h1>Short bio</h1>
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>My story begins in Botosani, a small town in the north of Romania 🇷🇴, with harsh winters and nice people.</li>
+									<li>I was born during the late stages of a very severe dictatorial regime, so I experienced a lot of change during the early stages of my life. Seeing how a whole society can be changed by new & better ideals was an inspiring experience.</li>
+									<li>As my grandfather was a lorry 🚛 driver, I grew near heavy machinery which always broke and had to be fixed by mechanics. 🛠 This fascinated me: as a kid I spent whole days watching them work and come with ingenious workarounds due to lack of proper funding.</li>
+									<li>I kept the passion of seeing how things work throughout my life: I often take things appart and repair them.</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/romania-v2.jpg" alt="Romania">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="about-2">
+						<div class="slide_content">
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>Throughout school I was passionated by chess & physics and I participated in different national competitions and physics olympiads.</li>
+									<li>In high school I started a web design firm with a friend, we built websites for local business.</li>
+									<li>2015: after a holiday in Spain 🇪🇸, me and Elisabeta decided to move there to enjoy their sun, sea and great people.</li>
+									<li>2018: Elisabeta was offered a job by a company based in Amsterdam - we visited the city a few years back and liked it a lot, so we decided to move here 🇳🇱</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/cip-spain-2.jpg" alt="Ciprian in Barcelona">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="slide_content">
+							<h1>Driven by learning</h1>
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>I'm currently learning Go(lang) and reading more about efficient algorithms and data structures. I find these things really exciting and I would love the chance to further my knowledge in this fields and implement such solutions in real-world applications.</li>
+									<li>On a personal level, I'm always looking for new ways to improve myself. I'm trying to learn more about how the mind works and how to debug, debias and fine-tune it for better results.</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/cip-books.jpg" alt="Books & tutorial sites">
+								</div>
+							</div>
+						</div>
+							
+					</section>
+						
+					<section class="fun-facts">
+						<div class="slide_content">
+							<h1>Fun facts</h1>
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>I was a vegetarian 🥦 for 10 years.</li>
+									<li>I have a fat & black cat 🐱 called "Gras" <em>('gras' = 'fat' in Romanian)</em>. He travelled with me across Europe by car in 🇪🇸 & 🇳🇱</li>
+									<li>I broke my arm at a chess competition... playing football ⚽️</li>
+									<li>I can legally drive a lorry, so if you plan to suddenly pivot into logistics, I'm your man 😄</li>
+									<li>As a kid, I mistakenly emptied a whole shippment of wheat on the fields while trying to drive a harvester.</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/gras-cat-2.jpg" alt="Gras the travelling cat">
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section id="work" class="content_section" data-transition="slide">
+					<section class="skills">
+						<div class="slide_content">
+							<h1>My skills</h1>
+							<div class="flex f-wrap">
+								<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/cip-skills.jpg" alt="Ciprian tech stack">
+							</div>
+						</div>
+					</section>
+					<section class="current">
+						<div class="slide_content">
+							<h1>Current responsibilities</h1>
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>My work @ Zaang revolves around developing, deploying and maintaining web apps built with Laravel.</li>
+									<li>I use the full stack to solve specific problems and leverage multiple tools and technologies to achieve my goals.</li>
+									<li>Recently I built a new content management system for Luminate Group, an NGO fighting for fair and just societies. They needed a custom solution to better manage data, users and grants.</li>
+									<li>Other work included building collaboration platforms for song writers or web interfaces to edit and export custom PDF reports.</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/zaang-work.jpg" alt="Work @ Zaang">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="case-study">
+						<div class="slide_content">
+							<h1>Case Study: <span>Luminate Group</span></h1>
+							<div class="flex f-wrap">
+								<p>Most of my work is for commercial enterprises, but recently I've had the privilege to work for Luminate Group. They are a global philanthropic organisation with the goal of empowering people and institutions to work together to build just and fair societies.</p>
+								<p>Created by Pierre Omidyar (eBay's founder), the foundation has ambitious goals which are closely related to the real world in which we live today: data & privacy concerns, media rights in illiberal democracies, the fight for more transparent governments and many other concerning issues.</p>
+								<p>They wanted to establish a bold online presence and at the same time have an easy way to manage grants, users, media and other content.</p>
+								<p>I achieved this by developing a content management system with a back-end focused on simplicity and tailored to their exact needs. With built-in features like a blog, media library, seo edits & elastic search content indexing, the whole app is engineered to deliver content fast and with minimum editorial effort.</p>
+								<p>With a very tight deadline and pressure building up before the launch date - the site was streamed live on a video-wall at a fundraising party - I completed the project on time and above client expectations.</p>
+								<p>Pleased with the results, Luminate contracted us for a second development phase, in which the CMS will get upgraded with multi-language support, an improved grants management interface and other useful features.</p>
+								<p>Working for a NGO that is focused on improving the world we live in was a nice experience and I was proud to help them move one step closer to achieving their goals.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="case-study">
+						<div class="slide_content">
+							<h1>Case Study: <span>PDF Generation Tool</span></h1>
+							<div class="flex f-wrap">
+								<div class="main">
+									<p>One of Zaang's key service is to compile UX reports for existing or prospective clients.</p>
+									<p>In this process, a large share of time is lost formatting the raport - collating screenshots and presenting content nicely. Most comprehensive reports have over 100 pages and required expensive subscription-based software (Adobe InDesign) to layout properly and export.</p>
+									<p>My task was to create a tool that can be used by Zaang and other UX companies to compile reports in a much faster, cheaper and efficient manner.</p>
+									<p>Using off-the-shelf PDF generation libraries was slow and put high pressure on the server for large documents, so we had to pivot away from traditional methods and use modern technologies such as Puppeteer and Google Chrome running in headless mode.</p>
+								</div>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/uxdocs-preview.png" alt="UX Reports @ Zaang">
+								</div>
+							</div>
+						</div>
+					</section>					
+
+				</section>
+				
+				<section id="why-cip" class="content_section">
+					<section>
+						<div class="slide_content">
+							<h1>Why me</h1>
+							<ul class="main">
+								<li>Tech stack 💻 compatibility: I feel confident that I can master all your technical requirements.</li>
+								<li>Self starter ⚡️: ability to hit the ground running on my own and progress quickly with little supervision.</li>
+								<li>Good planning & research 🧪 skills. I always strive to deliver high-quality products, even when using tools or methodologies that I don't master yet.</li>
+								<li>I like new challenges and being pushed to learn and 🌱 grow. I don't want to join Oaky for an easy ride.<br>On the contrary: I'm looking for as much responsibility 🏋️‍♂️ as you can give me at this stage.</li>
+								<li>Team player 👨🏼‍💻: ability to collaborate with people from all departments <em>(including non-tech savvy)</em>.</li>
+								<li>Great communication skills 📡 and a team player that knows how to leverage the talents of his co-workers.</li>
+								<li>Strong analytical 🧠 and abstract thinking. Passion for design 🎨, keen eye for UI/UX.</li>
+								<li>Experienced in working directly with clients 📈: I can translate client requirements into tasks and prevent frustration by planning ahead &amp; asking questions in a language they understand.</li>
+								<li>I don't bring my ego‍‍ 🧘🏼‍♂️ to work or the decision table.</li>
+							</ul>
+					</section>
+				</section>
+
+				<section id="why-oaky" class="content_section">
+					<section>
+						<div class="slide_content">
+							<h1>Why Oaky</h1>
+							<div class="flex f-wrap">
+								<ul class="main">
+									<li>I'd like to shift my focus from agency / multi-client work to a single product that can be upgraded and improved continuously.</li>
+									<li>Oaky builds services that directly impacts peoples' lives, bringing extra value both to hoteliers and their guests.</li>
+									<li>Big data aquisition and building behavioural models out of it is certainly where we're all headed as a society. The fact that Oaky embraces the tech evolution and prepares for it shows commitment and long term planning, things I highly appreciate.</li>
+									<li>Besides the reasons related to your product and technology around it, I also like the energy around your company. The multi-cultural environment that Oaky promotes and your efforts to build a resilient and tight-knit team is something I subscribe to.</li>
+									<li>I think I can use my expertise to bring extra value for the team at this point in Oaky's development as a company.</li>
+								</ul>
+								<div class="side">
+									<img class="no-border no-margin no-shadow" src="https://storage.googleapis.com/ciprianpro.appspot.com/images/slides/why-oaky.jpg" alt="Ciprian at Oaky">
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section id="hello" data-transition="zoom">
+					<div class="flex">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 298 298" width="200" height="200">
+							<path d="M148.95,296.5c-18.6,0-36.62-3.39-53.69-10.08c9.33,2.56,19.03,4.12,28.96,4.65c2.24,0.12,4.51,0.18,6.74,0.18   c14.94,0,29.92-2.72,44.54-8.08c14.45-5.3,26.74-12.14,36.55-20.32c9.79-8.17,18.12-17.46,24.77-27.63c1.42-2.27,2.1-4.25,2.01-5.9   c-0.09-1.72-1.44-3.29-3.99-4.66L209,203.44c-1.33-0.81-2.59-1.2-3.81-1.2c-2.56,0-4.96,1.7-7.14,5.06   c-3.93,6.21-9.29,12.24-15.93,17.9c-6.64,5.66-14.38,10.13-23.01,13.29c-8.95,3.28-17.96,4.95-26.78,4.95   c-1.76,0-3.54-0.07-5.3-0.2c-10.56-0.78-20.59-3.52-29.8-8.14c-9.22-4.62-17.56-11.01-24.79-18.99   c-7.22-7.98-12.89-17.47-16.83-28.21c-3.94-10.74-5.74-21.58-5.35-32.24c0.39-10.66,2.66-20.81,6.75-30.19   c4.08-9.37,10.01-17.78,17.64-25c7.62-7.21,16.93-12.87,27.67-16.8c8.63-3.16,17.04-4.8,25.02-4.86l0.72,0   c7.77,0,16.19,0.95,25.02,2.83c1.06,0.19,2.04,0.28,2.92,0.28c3.46,0,5.64-1.42,6.49-4.22l6.39-34.99c0.13-1.11-0.1-2.45-0.67-4.01   c-0.59-1.62-2.1-2.91-4.48-3.83c-11.24-3.2-22.99-4.81-34.96-4.81c-0.7,0-1.4,0.01-2.1,0.02c-12.73,0.2-26.51,2.99-40.95,8.29   c-16.79,6.16-31.69,15.23-44.28,26.96c-12.58,11.73-22.56,25.36-29.67,40.51c-4.3,9.16-7.51,18.77-9.58,28.68   c3.38-34.75,18.86-66.93,44.17-91.46C73.99,16.26,110.44,1.5,148.95,1.5c81.33,0,147.5,66.17,147.5,147.5   C296.45,230.33,230.28,296.5,148.95,296.5z"></path>
+						</svg>
+						<h1>thank you!</h1>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
